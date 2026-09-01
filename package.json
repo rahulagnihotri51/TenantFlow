@@ -1,0 +1,38 @@
+{
+  "name": "tenantflow",
+  "version": "1.0.0",
+  "description": "TenantFlow is a backend platform that allows multiple independent organization to use the same application infrastructure while keeping their users, data, permissions, Api access, and resources securely isolated from one another",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+  "dev": "tsx watch src/server.ts",
+  "build": "tsc",
+  "start": "node dist/server.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahulagnihotri51/TenantFlow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahulagnihotri51/TenantFlow/issues"
+  },
+  "homepage": "https://github.com/rahulagnihotri51/TenantFlow#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.4.0",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}
