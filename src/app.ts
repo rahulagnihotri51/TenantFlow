@@ -1,22 +1,20 @@
-import express from "express";
+import express = require('express');
 
 const app = express();
 
 app.use(express.json());
 
-app.get('/health',(req,res)=>{
-    res.json({
-        status:"rahul"
-    })
+app.get('/users',(req,res)=>{
+    res.json(({
+        message:"User recieved"
+    }))
 })
-
 app.post('/users',(req,res)=>{
     console.log(req.body);
-
-    res.json({
-        message:"hello",
+    res.json(({
+        message:"Rahul",
         user:req.body
-    })
+    }))
 })
 
-export default app;
+module.exports = app;
