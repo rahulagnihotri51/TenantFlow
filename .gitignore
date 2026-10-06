@@ -1,3 +1,20 @@
-docs/
-.env
+# Dependencies
 node_modules/
+
+# Environment
+.env
+
+# Build
+dist/
+build/
+
+# Prisma generated files
+/src/generated/
+
+# AI/editor files
+.agents/
+.claude/
+.windsurf/
+
+# Logs
+*.log
